@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+	margin-top: 0.5rem;
+}
+
+.section {
+	background-color: white;
+	margin: 1rem;
+	border-radius: 5px;
+}
+
+.lo-fi {
+	width: 40rem;
+}
+
+.hi-fi {
+	width: 40rem;
+}
+
+.computer{
+	width:60rem;
+
+}
+
+#old-moss-site, .style-guide {
+	width:30rem;
+}
+
+/* Below is from https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
+html {
+	scroll-behavior: smooth;
+  }

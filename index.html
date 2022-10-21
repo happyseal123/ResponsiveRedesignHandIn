@@ -1,0 +1,140 @@
+
+<!-- Note: I used bootstrap and made extensive use of Bootstrap's components, as well as Jeff's Bootstrap demo video -->
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Redesign</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    
+    <!-- Navbar code: I wrote this using Bootstrap documentation & Jeff's Bootstrap video -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h3>Responsive Redesign</h3></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar-item"><a href="#intro" class="nav-link">Task</a></li>
+            <li class="navbar-item"><a href="#use-prob" class="nav-link">Usability Issues</a></li>
+            <li class="navbar-item"><a href="#vis-red" class="nav-link">Visual Redesign</a></li>
+            <li class="navbar-item"><a href="#red-site" class="nav-link">Redesigned Site</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <div id="intro" class="section">
+      <div class="d-flex flex-column">
+        <h4>Task</h4>
+        <ul>
+          <li>
+            As part of the course <a href="https://cs.brown.edu/courses/csci1300/">CSCI 1300: User Interfaces and User Experience</a> at Brown University, I practiced the workflow of redesigning a website.
+          </li>
+          <li>
+            I chose to redesign the website for <a href="http://moss-hair-salon-providence.com/">Moss Hair Salon</a>, a full-service salon located in Providence, RI, because I judge establishments by the look and usability of their site. Rather than drawing me in, the current state of the Moss site would leave me looking for another salon.
+          </li>
+          <li>
+            The current Moss site (home page shown):
+            <img alt="Current Moss Salon website" id="old-moss-site" src="moss-site-old.png" alt="Old Moss Site">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="use-prob" class="section">
+      <div class="d-flex flex-column">
+        <h4>Usability Issues</h4>
+        <ul>
+          <li>
+            <b>Poor Learnability for New Users:</b> 
+            <ul>
+              <li>Unclear how to perform typical tasks, such as booking a hair appointment</li>
+              <li>Salon reviews hidden within "Our Staff" page, which new users would not be aware of</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Difficult to Determine State of the System:</b> "Our Staff" page on navigation menu is highlighted even when user is on the home page, making it confusing to know what page one is currently on
+          </li>
+
+          <li>
+            <b>Visual Design Problems:</b>
+            <ul>
+              <li>Low contrast areas make it difficult to read text</li>
+              <li>Unclear hierarchy with important information, such as salon phone number for booking appointments, very small</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Accessibility Concerns:</b>
+            <ul>
+              <li>
+               The <a href="https://wave.webaim.org/">WebAIM WAVE</a> Accessibility Evaluation Tool highlighted low contrast as an accessibility concern, but positively graded the site's use of alt tags on images.
+              </li>
+              <li>
+                I definitely agree that contrast can be improved. However, I think the site's alt tags could be more useful and descriptive (for example, a current alt tag is "Providence hair styling" for a picture of blow-dryed hair)
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="vis-red" class="section">
+      <div class="d-flex flex-column">
+        <h4>Visual Redesign</h4>
+        <ul>
+          <li>
+            <b>Low-Fidelity Wireframing:</b> After identifying usability problems, I created low-fidelity wireframes to address those issues across different screen sizes, such as a phone, tablet, and computer.
+            <div class="d-flex flex-wrap justify-content-center">
+              <img alt="Lo-Fi Phone Wireframe" class="lo-fi" src="lo-fi-phone.png">
+              <img alt="Lo-Fi Tablet Wireframe" class="lo-fi" src="lo-fi-tablet.png">
+              <img alt="Lo-Fi Computer Wireframe" class="computer" src="lo-fi-computer.png">
+            </div>
+          </li>
+          <li>
+            <b>Visual Design Style Guide:</b> Before creating high-fidelity prototypes, I decided on the web page's typography, colors, and appearance of core components in different states (ex: normal state, on hover). I compiled those choices into a visual design style guide.
+            <div class="d-flex flex-wrap justify-content-center">
+              <img alt="Visual Style Guide" class="style-guide" src="style-guide.png">
+            </div>
+          </li>
+          <li>
+            <b>High-Fidelity Prototyping:</b> I then crafted high-fidelity prototypes to serve as guides for building the site in HTML and CSS. I have annotated them with guidelines for how they can be coded.
+            <div class="d-flex flex-wrap justify-content-center">
+              <img alt="Hi-Fi Phone Prototype" class="hi-fi" src="hi-fi-phone.png">
+              <img alt="Hi-Fi Tablet Prototype" class="hi-fi" src="hi-fi-tablet.png">
+              <img alt="Hi-Fi Computer Prototype" class="computer" src="hi-fi-computer.png">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="red-site" class="section">
+      <div class="d-flex flex-column">
+        <h4>Redesigned Site</h4>
+        <ul>
+          <!-- Used this to make em dash: https://www.toptal.com/designers/htmlarrows/punctuation/em-dash/ -->
+          <li>
+            Finally, I used HTML and CSS with the Bootstrap front-end framework to code and deploy a <b>redesigned version of Moss's homepage, 
+              which can be found <a href="https://happyseal123.github.io/ResponsiveRedesign/">here</a></b>. The page is fully responsive <span>&#8212;</span> well-suited for all users, regardless of device.
+            </li>
+          <li>
+            Below are screenshots of the live site on phone, computer, and tablet-sized screens:
+            <img tablet="Screenshots of Redesigned Site" src="final-product.png">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
